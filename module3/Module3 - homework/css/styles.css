@@ -33,14 +33,14 @@
 .main-box {
   /*border: 1px solid green;*/
   margin: 0;
-  width: calc(50% - 30px);
+  width:calc(50% - 30px);
   float: left;
 }
 
 .main-box2 {
   /*border: 1px solid green;*/
   margin: 0;
-  width: calc(50% - 30px);
+  width:calc(50% - 30px);
   float: right;
   /*padding: 0 0 0 20px; /* Вверх право вниз лево*/
 }
@@ -86,7 +86,7 @@ button {
 	display: inline-block;
 	text-align: center;
 	padding: 21px 35px 21px 35px; /* Вверх право вниз лево*/
-	border-radius: 0px;
+	/*border-radius: 0.1px;*/
 	margin: 57px 0px 70px 0px; /* Вверх право вниз лево*/
 	border-color: black;
 	background: white no-repeat;
