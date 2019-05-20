@@ -1,0 +1,51 @@
+.body {
+	margin: 0;
+}
+
+.header {
+	margin: 0;
+	display: block;
+	text-align: center;
+	/*border: 1px solid black;*/
+}
+
+.box {
+	border: 1px solid rgba(245,245,245,255);
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+	margin: 0 auto;
+	text-align: center;
+	width: 470px;
+	height: auto;
+	padding: 30px 20px 30px 20px; /* Вверх право вниз лево*/
+}
+
+.main-box {
+  /*border: 1px solid green;*/
+  margin: 0;
+}
+
+.image {
+  margin: 0px 0 20px 0;
+  /*background-color: #009688;*/
+}
+
+.lifestyle {
+	margin: 0px 0 30px 0;
+	text-align: left;
+	text-transform: uppercase;
+	color: #C0BDB8;
+}
+
+.music {
+	margin: 0px 0 20px 0;
+	font-size: 28px;
+	font-weight: 500;
+	text-align: left;
+	color: #626262;
+}
+
+.lorem {
+	margin: 20px 0 0 0;
+	text-align: left;
+	color: #626262;
+}
