@@ -1,0 +1,166 @@
+<!-- 
+   1. https://validator.w3.org/ - валидатор говорит ок 
+   2. имя файла іndex.html" ""
+   3. style в html - дурной тон :) выноси все в style.css 
+   4. id для js для верстки юзай сlass 
+   5. https://developer.mozilla.org/en-US/docs/Web/HTML/Element   все теги
+   Просмотри впервую очередь какие текстовые какие блочные
+   
+   https://developer.mozilla.org - мекка для Front-end deva :)
+   
+   Cупер сайт - выравнивает html и сss контент
+   https://www.freeformatter.com/html-formatter.html
+   
+   как вітягивать свойства из фотошоп я тебе показал - обнови свойства в домашке пожалуйста
+    -->
+<!DOCTYPE html>
+<html lang="zxx">
+   <head>
+      <meta charset="UTF-8">
+      <link href="css/nomalize.css">
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
+      <title>Module3 - Homework</title>
+   </head>
+   <body>
+      <nav class="crumbs">
+         <ul>
+            <li class="crumb"><a href="#music">lifestyle</a></li>
+            <li class="crumb"><a href="#american">photodiary</a></li>
+            <li class="crumb"><a href="#razdel2">music</a></li>
+            <li class="crumb"><a href="#razdel3">travel</a></li>
+         </ul>
+      </nav>
+      <!-- есть тег nav-->
+      <!--<div class="navigation">
+         <div>-->
+      <!-- как по мне div лишний, можно сделать для a display: block;. Есть еще тяга у многих навигацию через ul делать -->
+      <!--<a href="#music-festival" rel="nofollow">lifestyle</a> 
+         </div>
+         <div>
+            <a href="#american-dream" rel="nofollow">photodiary</a>
+         </div>
+         <div>
+            <a href="#music" rel="nofollow">music</a>
+         </div>
+         <div>
+            <a href="#coffee" rel="nofollow">travel</a>
+         </div>
+         </div> -->
+      <!--navigation-->
+      <div class="content">
+         <!--для тега обертки можно взять section-->
+         <div class="box">
+            <div class="row">
+               <section class="main-box">
+                  <!-- First row -->
+                  <!-- First column -->
+                  <div class="image">
+                     <img src="images/image-1.jpg" alt="Photo" >
+                  </div>
+                  <div class="lifestyle">
+                     lifestyle
+                  </div>
+                  <div class="music">
+                     More than just a music festival
+                  </div>
+                  <div class="lorem">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  </div>
+               </section>
+               <section class="main-box2">
+                  <!-- Second column -->
+                  <div class="image">
+                     <img src="images/image-2.jpg" alt="Photo2" >
+                  </div>
+                  <div class="lifestyle">
+                     lifestyle
+                  </div>
+                  <div class="music">
+                     Life tastes better with coffee
+                  </div>
+                  <div class="lorem">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  </div>
+               </section>
+            </div>
+            <!--End of First row -->
+            <!-- Second row -->
+            <a name="razdel2"></a>
+            <div class="row2">
+               <section class="main-box">
+                  <!-- First column -->
+                  <div class="image">
+                     <img src="images/image-3.jpg" alt="Photo">
+                  </div>
+                  <div class="lifestyle">
+                     lifestyle
+                  </div>
+                  <div class="music">
+                     American dream
+                  </div>
+                  <div class="lorem">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  </div>
+               </section>
+               <section class="main-box2">
+                  <!-- Second column -->
+                  <div class="image">
+                     <img src="images/image-4.jpg" alt="Photo2" >
+                  </div>
+                  <div class="lifestyle">
+                     lifestyle
+                  </div>
+                  <div class="music">
+                     A day exploring the life
+                  </div>
+                  <div class="lorem">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  </div>
+               </section>
+            </div>
+            <!--End of Second row -->
+            <!-- Third row -->
+            <a name="razdel3"></a>
+            <div class="row3" name="razdel3">
+               <section class="main-box">
+                  <!-- First column -->
+                  <div class="image">
+                     <img src="images/image-5.jpg" alt="Photo" >
+                  </div>
+                  <div class="lifestyle">
+                     lifestyle
+                  </div>
+                  <div class="music">
+                     Top 10 song for running
+                  </div>
+                  <div class="lorem">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  </div>
+               </section>
+               <section class="main-box2">
+                  <!-- Second column -->
+                  <div class="image">
+                     <img src="images/image-6.jpg" alt="Photo2" > <!-- height 100%  лишний -->
+                  </div>
+                  <div class="lifestyle">
+                     lifestyle
+                  </div>
+                  <div class="music">
+                     Life tastes better with coffee
+                  </div>
+                  <div class="lorem">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  </div>
+               </section>
+            </div>
+            <!--End of Third row -->
+         </div>
+      </div>
+      <!--main-box -->
+      <!-- button -->
+      <div class="button">
+         <button name="load more">Load more</button>
+      </div>
+      <!-- end of button -->
+   </body>
+</html>

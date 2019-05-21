@@ -1,56 +1,135 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
 
+/*font потерялж со шрифтами самая беда*/
+
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*на реальных проектах в 99% случаев прописывают прописывай и привыкай*/
+	font-family: 'Playfair Display', serif;
+}
+
+
+/*
 .body {
-	margin: 0;
-}
+margin: 0; - лишний стиль
+}*/
 
-.content, .navigation {
-	margin: 0;
-	display: block;
+.content {
+	/*хорошая идея общие свойства не дублировать но лучше сделай так:
+.h-text-left{
+text-align: left;
+}
+хелпер класс и прописывай его где надо
+*/
+	/*margin: 0;   /* лишнее свойтво  лучше сброс стилей */
+	/*display: block; /* лишнее свойтво div блочный елемент*/
 	text-align: center;
-
 }
 
-.navigation > div {
+
+/* не перемешивай свойства - верстай:
+Header *** 
+все свойсва для хедера 
+потом секций 1
+потом секций 2
+и т д.
+; */
+
+nav {
+	/*ссылки укотились*/
 	/*margin: 0;*/
-	display: inline;
 	text-align: center;
+}
+
+.crumb {
+	list-style-type: none;
+	display: inline-block;
+	/* можно прямо ссылкам прописать */
 	text-transform: uppercase;
-	margin: 80px 50px 80px 50px; /* Вверх право вниз лево*/
+	margin: 12px 0px 0px 40px;
+	/* Вверх право вниз лево*/
+	width: 113px;
+	height: 42px;
+	font-size: 14px;
+	line-height: 24px;
+	color: #626262;
+	font-family: "Playfair Display";
+	font-weight: 400;
+	text-align: center;
+}
+
+ul li a {
+	color: #626262;
+	text-decoration: none;
+}
+
+li a:hover {
+	color: black;
+	cursor: pointer;
 }
 
 .box {
 	display: inline-block;
 	/*border: 1px solid rgba(245,245,245,255);
-	box-shadow: 0 0 5px rgba(0,0,0,0.5);*/
+box-shadow: 0 0 5px rgba(0,0,0,0.5);*/
 	margin: 0 auto;
 	text-align: center;
 	width: 960px;
-	height: auto;
-	padding: 75px 45px 30px 45px; /* Вверх право вниз лево*/
+	padding: 75px 45px 30px 45px;
+	/* Вверх право вниз лево*/
+}
+
+.row,
+.row2,
+.row3 {
+	display: inline-flex;
 }
 
 .main-box {
-  /*border: 1px solid green;*/
-  margin: 0;
-  width:calc(50% - 30px);
-  float: left;
+	/*border: 1px solid green;*/
+	width: calc(50% - 30px);
+	display: inline;
+	padding: 0px 40px 0px 0px;
+	/* Вверх право вниз лево*/
+	/*float: left;*/
 }
 
+
+/*.image img {
+width: 100%;
+height: 100%;
+}*/
+
 .main-box2 {
-  /*border: 1px solid green;*/
-  margin: 0;
-  width:calc(50% - 30px);
-  float: right;
-  /*padding: 0 0 0 20px; /* Вверх право вниз лево*/
+	/*border: 1px solid green;*/
+	width: calc(50% - 30px);
+	display: inline;
+	padding: 0px 0px 0px 40px;
+	/* Вверх право вниз лево*/
+	/*float: right;*/
+	/*padding: 0 0 0 20px; /* Вверх право вниз лево*/
 }
 
 .image {
-  margin: 0px 0 20px 0;
-  /*background-color: #009688;*/
+	margin: 0px 0 20px 0;
+	/*background-color: #009688;*/
 }
 
-.lifestyle, .photodiary {
+.lifestyle {
+	/* это 1  класс - сделай 1 название и поправь в html*/
 	margin: 0px 0 30px 0;
 	text-align: left;
 	text-transform: uppercase;
@@ -59,7 +138,8 @@
 
 .music {
 	margin: 0px 0 20px 0;
-	font-size: 1.5vw;
+	font-size: 33px;
+	/* для первой домашки собери на px. потом будут rem*/
 	font-weight: 500;
 	text-align: left;
 	color: #626262;
@@ -72,23 +152,44 @@
 	font-size: 0.7vw;
 }
 
-a {
-	color: #626262;
-	text-decoration: none;
-}
-a:hover {
-    color:black;
-    text-decoration:none;
-    cursor:pointer;
+
+/* не перемешивай свойства - верстай:
+Header *** 
+все свойсва для хедера 
+потом секций 1
+потом секций 2
+и т д.
+; */
+
+
+/*a {
+color: #626262;
+text-decoration: none;
+}*/
+
+
+/*a:hover {
+color: black;
+text-decoration:none;  /* Лишнее*/
+
+
+/*cursor: pointer; 
+}*/
+
+.button {
+	text-align: center;
 }
 
 button {
-	display: inline-block;
 	text-align: center;
-	padding: 21px 35px 21px 35px; /* Вверх право вниз лево*/
+	padding: 21px 35px 21px 35px;
+	/* Вверх право вниз лево. Пока не выучише флексы вертекальное центрирование это жопа :)*/
 	/*border-radius: 0.1px;*/
-	margin: 57px 0px 70px 0px; /* Вверх право вниз лево*/
+	margin: 57px 0px 70px 0px;
+	/* Вверх право вниз лево*/
 	border-color: black;
-	background: white no-repeat;
-	cursor:pointer;
+	/* border: 1px solid black;*/
+	background: white;
+	/* no-repeat - лишнее - это свойство перечитай bacground*/
+	cursor: pointer;
 }
