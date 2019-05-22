@@ -48,27 +48,130 @@ Header ***
 и т д.
 ; */
 
-nav {
+/*nav {*/
 	/*ссылки укотились*/
 	/*margin: 0;*/
-	text-align: center;
-}
+	/*text-align: center;
+}*/
 
-.crumb {
-	list-style-type: none;
-	display: inline-block;
-	/* можно прямо ссылкам прописать */
+ul.cru li {
+	display: inline;
+	margin-right: 5px;
+	border: 1px solid #000;
+	padding: 40px;
 	text-transform: uppercase;
-	margin: 12px 0px 0px 40px;
-	/* Вверх право вниз лево*/
 	width: 113px;
-	height: 42px;
 	font-size: 14px;
-	line-height: 24px;
 	color: #626262;
 	font-family: "Playfair Display";
 	font-weight: 400;
 	text-align: center;
+}
+
+ul.cru > li.cr1 {
+	margin: 40px 0px 0px 0px;
+}
+
+.crumbs {
+	/*width: 572px;*/
+	text-align: center;
+	/*margin: 0 auto;*/
+	/*position: relative;*/
+	/*display: inline-block;*/
+	/*padding: 0px 46px 0px 40px;*/
+	margin: 0px 0px 95px 0px;
+}
+
+.crumb {
+	/*position: absolute;*/
+	/*left: 50%;*/
+	/*margin-left: -296px; /*смещаем блок влево на расстояние, равное половине его ширины*/
+	/*margin-bottom: -10px;*/
+	list-style-type: none;
+	display: inline;
+	/* можно прямо ссылкам прописать */
+	text-transform: uppercase;
+	/*margin: 10px 11px 0px 40px;*/
+	/* Вверх право вниз лево*/
+	width: 113px;
+	/*height: 42px;*/
+	font-size: 14px;
+	/*line-height: 60px;*/
+	color: #626262;
+	font-family: "Playfair Display";
+	font-weight: 400;
+	text-align: center;
+	padding: 0px 0px 0px 58px;
+	/*margin: 0px 0px 50px 0px;*/
+}
+
+.crumb2 {
+	/*position: absolute;*/
+	/*left: 50%;*/
+	/*margin-left: -296px; /*смещаем блок влево на расстояние, равное половине его ширины*/
+	/*margin-bottom: -10px;*/
+	list-style-type: none;
+	display: inline;
+	/* можно прямо ссылкам прописать */
+	text-transform: uppercase;
+	/*margin: 10px 11px 0px 40px;*/
+	/* Вверх право вниз лево*/
+	width: 113px;
+	/*height: 42px;*/
+	font-size: 14px;
+	line-height: 60px;
+	color: #626262;
+	font-family: "Playfair Display";
+	font-weight: 400;
+	text-align: center;
+	padding: 0px 28px 0px 70px;
+	/*margin: 50px 0px 0px 0px;*/
+}
+
+.crumb3 {
+	/*position: absolute;*/
+	/*left: 50%;*/
+	/*margin-left: -296px; /*смещаем блок влево на расстояние, равное половине его ширины*/
+	/*margin-bottom: -10px;*/
+	list-style-type: none;
+	display: inline;
+	/* можно прямо ссылкам прописать */
+	text-transform: uppercase;
+	/*margin: 10px 11px 0px 40px;*/
+	/* Вверх право вниз лево*/
+	width: 113px;
+	/*height: 42px;*/
+	font-size: 14px;
+	line-height: 60px;
+	color: #626262;
+	font-family: "Playfair Display";
+	font-weight: 400;
+	text-align: center;
+	padding: 0px 53px 0px 65px;
+	/*margin: 50px 0px 0px 0px;*/
+}
+
+.crumb4 {
+	/*position: absolute;*/
+	/*left: 50%;*/
+	/*margin-left: -296px; /*смещаем блок влево на расстояние, равное половине его ширины*/
+	/*margin-bottom: -10px;*/
+	list-style-type: none;
+	display: inline;
+	/* можно прямо ссылкам прописать */
+	text-transform: uppercase;
+	/*margin: 10px 11px 0px 40px;*/
+	/* Вверх право вниз лево*/
+	width: 113px;
+	/*height: 42px;*/
+	font-size: 14px;
+	line-height: 60px;
+	color: #626262;
+	font-family: "Playfair Display";
+	font-weight: 400;
+	text-align: center;
+	padding: 0px 48px 0px 38px;
+	/*margin: 50px 0px 0px 0px;*/
 }
 
 ul li a {
@@ -88,21 +191,25 @@ box-shadow: 0 0 5px rgba(0,0,0,0.5);*/
 	margin: 0 auto;
 	text-align: center;
 	width: 960px;
-	padding: 75px 45px 30px 45px;
+	padding: 78px 45px 30px 40px;
 	/* Вверх право вниз лево*/
 }
 
 .row,
-.row2,
+.row2 {
+	display: inline-flex;
+}
+
 .row3 {
 	display: inline-flex;
+	padding: 3px 40px 0px 0px;
 }
 
 .main-box {
 	/*border: 1px solid green;*/
 	width: calc(50% - 30px);
 	display: inline;
-	padding: 0px 40px 0px 0px;
+	padding: 0px 0px 3px 0px;
 	/* Вверх право вниз лево*/
 	/*float: left;*/
 }
@@ -124,32 +231,81 @@ height: 100%;
 }
 
 .image {
-	margin: 0px 0 20px 0;
+	/*margin: 0px 0 20px 0;*/
 	/*background-color: #009688;*/
 }
 
 .lifestyle {
 	/* это 1  класс - сделай 1 название и поправь в html*/
-	margin: 0px 0 30px 0;
+	/*margin: 0px 0 30px 0;
 	text-align: left;
 	text-transform: uppercase;
-	color: #C0BDB8;
+	color: #C0BDB8;*/
+	text-align: left;
+	text-transform: uppercase;
+	width: 408px;
+	height: 25px;
+	font-size: 14px;
+	color: #b4ad9e;
+	font-family: "Ubuntu";
+	font-weight: 300;
+	padding: 25px 0px 0px 2px;
+}
+
+.row2>.main-box>.lifestyle {
+	width: 418px;
+	height: 21px;
+}
+
+.row3>.main-box>.lifestyle {
+	width: 421px;
+	height: 27px;
+	padding: 25px 0px 0px 0px;
 }
 
 .music {
-	margin: 0px 0 20px 0;
-	font-size: 33px;
 	/* для первой домашки собери на px. потом будут rem*/
+	/*margin: 0px 0 20px 0;
+	font-size: 33px;
 	font-weight: 500;
 	text-align: left;
+	color: #626262;*/
+	text-align: left;
+	width: 420px;
+	height: 95px;
+	font-size: 30px;
 	color: #626262;
+	font-family: "Playfair Display";
+	font-weight: 400;
+	padding: 34px 10.5px 0px 0px;
+}
+
+.row2>.main-box>.music {
+	padding: 31.5px 11px 0px 2px;
+	/*color: red;*/
+}
+
+.row3>.main-box>.music {
+	/*height: 40px;*/
+	padding: 31.5px 0px 0px 2px;
+	margin: 0px 0px 0px -2px;
+	color: red;
 }
 
 .lorem {
-	margin: 20px 0 0 0;
+	/*margin: 20px 0 0 0;
 	text-align: left;
 	color: #626262;
-	font-size: 0.7vw;
+	font-size: 0.7vw;*/
+	text-align: center;
+	width: 420px;
+	height: auto; /*78px;*/
+	font-size: 14px;
+	line-height: 24px;
+	color: #626262;
+	font-family: "Playfair Display";
+	font-weight: 400;
+	padding: 6px 10px 126px 0px;
 }
 
 
