@@ -21,6 +21,33 @@ html {
 	font-family: 'Playfair Display', serif;
 }
 
+.menu {
+	/*max-width: 572px;*/
+	/*margin: 0 auto;*/
+	text-align: center;
+	margin-bottom: 79px;
+}
+
+.menu li {
+	display: inline-block;
+	text-align: center;
+}
+
+.crumb a {
+	margin-left: -178px;
+}
+
+.crumb2 a {
+	margin-left: -34px;
+}
+
+.crumb3 a {
+	margin-left: 45px;
+}
+
+.crumb4 a {
+	margin-left: 88px;
+}
 
 /*
 .body {
@@ -54,7 +81,7 @@ Header ***
 	/*text-align: center;
 }*/
 
-ul.cru li {
+/*ul.cru li {
 	display: inline;
 	margin-right: 5px;
 	border: 1px solid #000;
@@ -66,112 +93,40 @@ ul.cru li {
 	font-family: "Playfair Display";
 	font-weight: 400;
 	text-align: center;
-}
+}*/
 
-ul.cru > li.cr1 {
+/*ul.cru > li.cr1 {
 	margin: 40px 0px 0px 0px;
-}
+}*/
 
-.crumbs {
-	/*width: 572px;*/
+/*.crumbs {
 	text-align: center;
-	/*margin: 0 auto;*/
-	/*position: relative;*/
-	/*display: inline-block;*/
-	/*padding: 0px 46px 0px 40px;*/
 	margin: 0px 0px 95px 0px;
-}
+}*/
 
-.crumb {
-	/*position: absolute;*/
-	/*left: 50%;*/
-	/*margin-left: -296px; /*смещаем блок влево на расстояние, равное половине его ширины*/
-	/*margin-bottom: -10px;*/
+.crumb, .crumb2, .crumb3, .crumb4 {
 	list-style-type: none;
 	display: inline;
-	/* можно прямо ссылкам прописать */
 	text-transform: uppercase;
-	/*margin: 10px 11px 0px 40px;*/
-	/* Вверх право вниз лево*/
 	width: 113px;
-	/*height: 42px;*/
 	font-size: 14px;
-	/*line-height: 60px;*/
 	color: #626262;
-	font-family: "Playfair Display";
 	font-weight: 400;
 	text-align: center;
 	padding: 0px 0px 0px 58px;
-	/*margin: 0px 0px 50px 0px;*/
+	line-height: 60px;
 }
 
 .crumb2 {
-	/*position: absolute;*/
-	/*left: 50%;*/
-	/*margin-left: -296px; /*смещаем блок влево на расстояние, равное половине его ширины*/
-	/*margin-bottom: -10px;*/
-	list-style-type: none;
-	display: inline;
-	/* можно прямо ссылкам прописать */
-	text-transform: uppercase;
-	/*margin: 10px 11px 0px 40px;*/
-	/* Вверх право вниз лево*/
-	width: 113px;
-	/*height: 42px;*/
-	font-size: 14px;
-	line-height: 60px;
-	color: #626262;
-	font-family: "Playfair Display";
-	font-weight: 400;
-	text-align: center;
 	padding: 0px 28px 0px 70px;
-	/*margin: 50px 0px 0px 0px;*/
 }
 
 .crumb3 {
-	/*position: absolute;*/
-	/*left: 50%;*/
-	/*margin-left: -296px; /*смещаем блок влево на расстояние, равное половине его ширины*/
-	/*margin-bottom: -10px;*/
-	list-style-type: none;
-	display: inline;
-	/* можно прямо ссылкам прописать */
-	text-transform: uppercase;
-	/*margin: 10px 11px 0px 40px;*/
-	/* Вверх право вниз лево*/
-	width: 113px;
-	/*height: 42px;*/
-	font-size: 14px;
-	line-height: 60px;
-	color: #626262;
-	font-family: "Playfair Display";
-	font-weight: 400;
-	text-align: center;
 	padding: 0px 53px 0px 65px;
-	/*margin: 50px 0px 0px 0px;*/
 }
 
 .crumb4 {
-	/*position: absolute;*/
-	/*left: 50%;*/
-	/*margin-left: -296px; /*смещаем блок влево на расстояние, равное половине его ширины*/
-	/*margin-bottom: -10px;*/
-	list-style-type: none;
-	display: inline;
-	/* можно прямо ссылкам прописать */
-	text-transform: uppercase;
-	/*margin: 10px 11px 0px 40px;*/
-	/* Вверх право вниз лево*/
-	width: 113px;
-	/*height: 42px;*/
-	font-size: 14px;
-	line-height: 60px;
-	color: #626262;
-	font-family: "Playfair Display";
-	font-weight: 400;
-	text-align: center;
 	padding: 0px 48px 0px 38px;
-	/*margin: 50px 0px 0px 0px;*/
 }
 
 ul li a {
@@ -224,10 +179,18 @@ height: 100%;
 	/*border: 1px solid green;*/
 	width: calc(50% - 30px);
 	display: inline;
-	padding: 0px 0px 0px 40px;
+	padding: 0px 0px 0px 60px;
 	/* Вверх право вниз лево*/
 	/*float: right;*/
 	/*padding: 0 0 0 20px; /* Вверх право вниз лево*/
+}
+
+.main-box2 .lifestyle {
+	margin-left: -2px;
+}
+
+.main-box2 .music {
+	margin-left: -1px;
 }
 
 .image {
@@ -289,15 +252,23 @@ height: 100%;
 	/*height: 40px;*/
 	padding: 31.5px 0px 0px 2px;
 	margin: 0px 0px 0px -2px;
-	color: red;
+	/*color: red;*/
 }
 
+span.smile_right {
+-webkit-transform: rotate(-20deg); /* Chrome y Safari */
+-moz-transform: rotate(-90deg); /* Firefox */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Explorer */
+-o-transform: rotate(-90deg); /* Opera */
+display: inline-block; padding-left: 0px; vertical-align: text-top; text-indent: 0px;}
+
+
 .lorem {
-	/*margin: 20px 0 0 0;
-	text-align: left;
+	/*margin: 0px 0px -2px 0px;
+	ext-align: left;
 	color: #626262;
 	font-size: 0.7vw;*/
-	text-align: center;
+	text-align: left;
 	width: 420px;
 	height: auto; /*78px;*/
 	font-size: 14px;
@@ -308,6 +279,35 @@ height: 100%;
 	padding: 6px 10px 126px 0px;
 }
 
+.row3>.main-box>.lorem, .row3>.main-box2>.lorem {
+	padding: 6px 10px 16px 0px;
+}
+
+/*.row3>.main-box>.lorem>.lorem3-2-1 {
+	margin-left: -15px;
+}
+
+.row3>.main-box>.lorem>.lorem3-2-2 {
+	margin-left: -12px;
+}
+
+.row3>.main-box>.lorem>.lorem3-2-3 {
+	margin-left: -2px;
+	text-align: right;
+}
+
+.row3>.main-box2>.lorem>.lorem3-2-1 {
+	margin-left: -17px;
+}
+
+.row3>.main-box2>.lorem>.lorem3-2-2 {
+	margin-left: -12px;
+}
+
+.row3>.main-box2>.lorem>.lorem3-2-3 {
+	margin-left: -2px;
+	text-align: right;
+}*/
 
 /* не перемешивай свойства - верстай:
 Header *** 
@@ -332,20 +332,36 @@ text-decoration:none;  /* Лишнее*/
 /*cursor: pointer; 
 }*/
 
-.button {
+.footer {
 	text-align: center;
+	width: 100%;
 }
 
-button {
+.but {
 	text-align: center;
-	padding: 21px 35px 21px 35px;
+	width: 164px;
+	height: 60px;
+	/*background-color: #ddddd7;*/
+	border: 1px solid #626262;
+	margin: 0 auto;
+}
+
+.but button {
+	text-align: center;
+	/*padding: 21px 35px 21px 35px;*/
 	/* Вверх право вниз лево. Пока не выучише флексы вертекальное центрирование это жопа :)*/
 	/*border-radius: 0.1px;*/
-	margin: 57px 0px 70px 0px;
+	margin: 14px 0px 0px 0px;
 	/* Вверх право вниз лево*/
-	border-color: black;
-	/* border: 1px solid black;*/
+	/*border-color: black;*/
+	border: none;
 	background: white;
 	/* no-repeat - лишнее - это свойство перечитай bacground*/
 	cursor: pointer;
+
+	font-size: 20px;
+	/*line-height: 24px;*/
+	color: #818181;
+	font-weight: 400;
+	/*vertical-align: middle;*/
 }
