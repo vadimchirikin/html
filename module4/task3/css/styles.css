@@ -16,12 +16,16 @@ html {
 	/*на реальных проектах в 99% случаев прописывают прописывай и привыкай*/
 }
 
-.masthead {
-	max-width: 960px;
+.site-navigation li a::before {
+	content: "\2192";
+}
+
+
+ .masthead {
+	max-width: 980px;
 	margin: auto;
 	height: 100px;
-	line-height: 100px;
-	/*border-bottom: 3px solid #03a9f4;*/
+	line-height: 90px;
 	border-bottom: 3px solid #212121;
 }
 
@@ -37,7 +41,6 @@ html {
 .site-navigation li {
 	float: left;
 	list-style-type: none;
-	/* Убираем маркеры */
 }
 
 
@@ -66,36 +69,11 @@ html {
 	background-color: #0D5D56;    
 }
 
-/* Сработает при hover */
-
 .site-navigation a:hover {
 	color: #03a9f4;
-	/*background-image: linear-gradient(to bottom left, #0B486B, #F56217);*/
 }
-
-
-/* Сработает при удержании кнопки мыши на ссылке */
 
 .site-navigation a:focus {
 	color: #ff4081;
-	/*background-image: linear-gradient(to bottom left, #0B486B, #F56217);*/
 }
 
-.clearfix {
-	display: table;
-	content: "";
-	clear: both;
-}
-
-.cool-link::after {
-	content: '';
-	display: block;
-	width: 0;
-	height: 2px;
-	background: #03a9f4;
-	transition: width .3s;
-}
-
-.cool-link:hover::after {
-	width: 100%;
-}

@@ -16,13 +16,35 @@ html {
 	/*на реальных проектах в 99% случаев прописывают прописывай и привыкай*/
 }
 
-.masthead {
-	max-width: 960px;
-	margin: auto;
+body {
+  counter-reset: count-article;
+}
+
+.site-navigation li a::before {
+	content: "\274F";
+	/*content: "\22A1";*/
+}
+
+.site-navigation article li a::before {
+	margin-right: 10px;
+}
+
+.site-navigation article li a::after {
+	content: counter(count-article, upper-roman);
+	margin-left: 10px;
+}
+
+article {
+  counter-increment: count-article;
+}
+
+
+ .masthead {
+	/*max-width: 980px;*/
+	width: 800px;
+	margin: 0 auto;
 	height: 100px;
 	line-height: 100px;
-	/*border-bottom: 3px solid #03a9f4;*/
-	border-bottom: 3px solid #212121;
 }
 
 .masthead:hover { 
@@ -37,7 +59,6 @@ html {
 .site-navigation li {
 	float: left;
 	list-style-type: none;
-	/* Убираем маркеры */
 }
 
 
@@ -51,7 +72,7 @@ html {
 	text-transform: uppercase;
 }
 
-.site-navigation li:nth-child(3n+1) a {
+/* .site-navigation li:nth-child(3n+1) a {
 	color: #0E1116;
 	background-color: #88292F;   
 }
@@ -64,38 +85,13 @@ html {
 .site-navigation li:nth-child(3n+3) a {
 	color: #0E1116;
 	background-color: #0D5D56;    
-}
-
-/* Сработает при hover */
+} */
 
 .site-navigation a:hover {
 	color: #03a9f4;
-	/*background-image: linear-gradient(to bottom left, #0B486B, #F56217);*/
 }
-
-
-/* Сработает при удержании кнопки мыши на ссылке */
 
 .site-navigation a:focus {
 	color: #ff4081;
-	/*background-image: linear-gradient(to bottom left, #0B486B, #F56217);*/
 }
 
-.clearfix {
-	display: table;
-	content: "";
-	clear: both;
-}
-
-.cool-link::after {
-	content: '';
-	display: block;
-	width: 0;
-	height: 2px;
-	background: #03a9f4;
-	transition: width .3s;
-}
-
-.cool-link:hover::after {
-	width: 100%;
-}
