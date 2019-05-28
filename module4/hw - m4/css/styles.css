@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
+
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*на реальных проектах в 99% случаев прописывают прописывай и привыкай*/
+}
+
+.masthead {
+	/*max-width: 960px;*/
+	margin: auto;
+	height: 100px;
+	line-height: 90px;
+	/*border-bottom: 3px solid #03a9f4;*/
+	/*border-bottom: 3px solid #212121;*/
+
+	transition: border-width 0.3s linear;
+}
+
+/* .masthead:hover { 
+	border-width: 10px; 
+} */
+
+.site-navigation {
+	margin: auto;
+	/*width: 473px;*/
+	height: 23px;
+	padding-left: 435px;
+	text-align: left;
+}
+
+.site-navigation li {
+	float: left;
+	list-style-type: none;
+	/* Убираем маркеры */
+}
+
+.site-navigation a {
+	display: inline;
+	/* padding: 0 10px;
+	font-size: 20px;
+	color: #212121;
+	font-weight: 500;
+	text-decoration: none;
+	text-transform: uppercase; */
+
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 0 8px;
+
+	font-size: 14px;
+	letter-spacing: 0px;
+	line-height: 11px;
+	color: #1abc9c;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
+	/*text-align: right;*/
+}
+
+.link--2 {
+	margin-right: 50px;
+}
+
+/* Сработает при hover */
+
+.site-navigation a:hover {
+	color: #03a9f4;
+	/*background-image: linear-gradient(to bottom left, #0B486B, #F56217);*/
+}
+
+
+/* Сработает при удержании кнопки мыши на ссылке */
+
+.site-navigation a:focus {
+	color: #ff4081;
+	background-image: linear-gradient(to bottom left, #0B486B, #F56217);
+	*
+}
+
+.clearfix {
+	display: table;
+	content: "";
+	clear: both;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #03a9f4;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+}

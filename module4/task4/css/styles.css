@@ -25,16 +25,16 @@ body {
 	/*content: "\22A1";*/
 }
 
-.site-navigation article li a::before {
+.site-navigation li a::before {
 	margin-right: 10px;
 }
 
-.site-navigation article li a::after {
+.site-navigation li a::after {
 	content: counter(count-article, upper-roman);
 	margin-left: 10px;
 }
 
-article {
+li {
   counter-increment: count-article;
 }
 
