@@ -157,10 +157,12 @@ html {
 	clear: both;
 }
 
+/*Main content*/
+
 .gallery {
 	clear:both;
-	margin: 0px 270px 0 270px;
-	width: 1110px;
+	margin: 0px 270px 0px 270px;
+	/*width: 1160px;*/
 	text-align: left;
 }
 
@@ -168,7 +170,6 @@ html {
 	padding-top: 38px;
 	padding-left: 328px;
 	padding-bottom: 65px;
-	/*width: 1598px;*/
 	height: 83px;
 	font-size: 48px;
 	letter-spacing: -1px;
@@ -177,35 +178,105 @@ html {
 	font-family: "Roboto";
 	font-weight: 900;
 	text-transform: uppercase;
-	/*text-align: center;*/
 	position:relative;
 	display:inline-block;
 }
-
-/*.gallery_title:after {
-	content:"";
-    position:absolute;
-    bottom: 30px;
-    left:50%;
-    width:60%;
-    height:2px;
-    margin-left:-30%;
-    background:#000;
-    right: -10px;
-  	bottom: 30px;
-}*/
 
 .gallery_title:hover::after {
 	border-bottom:  7px solid #1abc9c;
 	content:"";
     position: absolute;
-    /*margin-left: 20%;*/
-    /*left: 50%;
-    right: 50%;*/
-    top: 105px;
-    /*right: 100px;
-    left: 100px;*/
+    top: 104px;
+    left: 475px;
     width: 164px;
-    /*margin-left: 400px;*/
-	/*width: 164px;*/
+}
+
+.cards {
+	padding-top: 100px;
+	padding-left: 2px;
+	display: inline-block;
+	/*display: inline-block;
+	margin: 0 auto;*/
+}
+
+.card, .card2, .card3, .card4 {
+	float: left;
+	padding-right: 30px;
+	/*display: inline;
+	margin: 0 auto;*/
+}
+
+.card_description, .price {
+	display: inline;
+	width: 159px;
+	height: 18px;
+	font-size: 18px;
+	letter-spacing: 0px;
+	line-height: 32px;
+	color: #ffffff;
+	/*color: red;*/
+	font-family: "Roboto";
+	font-weight: 900;
+	background: #323232;
+	text-transform: uppercase;
+}
+
+.card_description {
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 76px;
+}
+
+.card_description:hover {
+	background: #1ABC9C;
+}
+
+.price:hover {
+	background: #1ABC9C;
+}
+
+.price {
+	background: #8A8A8A;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 12px;
+	/*opacity: 0.5;*/
+  	/*filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.card2 > .card_description {
+	padding-right: 62px;
+}
+
+.card3 > .card_description {
+	padding-right: 52px;
+}
+
+.card4 > .card_description {
+	padding-left: 11px;
+	padding-right: 59px;
+}
+
+.row2 {
+	margin-top: 352px;
+}
+
+/*News*/
+
+footer .gallery .gallery_title {
+	padding-top: 106px;
+	padding-left: 400px;
+}
+
+footer .gallery_title:hover::after {
+    top: 171px;
+    left: 469px;
+    /*width: 164px;*/
+}
+
+.new_1 {
+	padding-top: 87px;
+	padding-right: 30px;
 }
